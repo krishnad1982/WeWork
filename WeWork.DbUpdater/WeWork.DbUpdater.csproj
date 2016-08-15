@@ -50,11 +50,31 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Scripts\" />
+    <EmbeddedResource Include="Scripts\db20160814EmpRole.sql" />
+    <EmbeddedResource Include="Scripts\db20160814EmpStatus.sql" />
+    <EmbeddedResource Include="Scripts\dbn20160814Bank.sql" />
+    <EmbeddedResource Include="Scripts\dbn20160814Country.sql" />
+    <EmbeddedResource Include="Scripts\dbn20160814CvCertif.sql" />
+    <EmbeddedResource Include="Scripts\dbn20160814Emp.sql" />
+    <EmbeddedResource Include="Scripts\dbn20160814EmpType.sql" />
+    <EmbeddedResource Include="Scripts\dbn20160814Ethnicity.sql" />
+    <EmbeddedResource Include="Scripts\dbn20160814Inventory.sql" />
+    <EmbeddedResource Include="Scripts\dbn20160814JobType.sql" />
+    <EmbeddedResource Include="Scripts\dbn20160814MaritalStatus.sql" />
+    <EmbeddedResource Include="Scripts\dbn20160814MedAid.sql" />
+    <EmbeddedResource Include="Scripts\dbn20160814MenuItems.sql" />
+    <EmbeddedResource Include="Scripts\dbn20160814MenuRights.sql" />
+    <EmbeddedResource Include="Scripts\dbn20160814Province.sql" />
+    <EmbeddedResource Include="Scripts\dbn20160814Remarks.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\dbn20160809AccType.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
