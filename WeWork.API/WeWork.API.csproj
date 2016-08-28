@@ -77,7 +77,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
@@ -102,9 +104,17 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\WeWork.BusinessDomain\WeWork.BusinessDomain.csproj">
+      <Project>{246becf4-cbeb-4fc8-929c-05368448bb99}</Project>
+      <Name>WeWork.BusinessDomain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WeWork.Logging\WeWork.Logging.csproj">
       <Project>{b40f2b3e-bad8-48b6-b66a-3611dc071b09}</Project>
       <Name>WeWork.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WeWork.Models\WeWork.Models.csproj">
+      <Project>{409a08c2-a60e-44e0-899a-28e6469d6ff0}</Project>
+      <Name>WeWork.Models</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
